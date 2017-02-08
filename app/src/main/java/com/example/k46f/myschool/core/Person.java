@@ -9,3 +9,7 @@ public class Person {
     String name;
 
 }
+
+enum Gender {
+    Male, Female
+}
