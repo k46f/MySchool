@@ -8,17 +8,29 @@ import android.util.Log;
 
 public class Course {
 
-    final String LOG_TAG = ">>>>>> Course ";
+    final String LOG_TAG = "Course >>> ";
 
-    private Integer students;
+    private final static Integer studentsQuantity = 25;
+
+    private String courseId;
+
+    private Teacher teacher;
+
+    private Student[] students;
+
+    private Grade grade;
+
+
+    public Course() {
+        courseId = "A";
+        teacher = new Teacher();
+        students = new Student[studentsQuantity];
+        grade = new Grade();
+    }
 
     public void receiveClasses() {
         Log.i(LOG_TAG, "Receiving Class");
 
-    }
-
-    public void grade(Grade grade) {
-        Log.i(LOG_TAG, "Pertain " + grade + " Grade.");
     }
 
 }

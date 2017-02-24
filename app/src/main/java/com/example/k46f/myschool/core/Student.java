@@ -8,17 +8,23 @@ import android.util.Log;
 
 public class Student extends Person {
 
-    final String LOG_TAG = ">>>>>> Student ";
+    final String LOG_TAG = "Student >>> ";
+
+    private Course course;
+
+    public Student() {
+        course = new Course();
+    }
 
     public void approve() {
-        Log.i(LOG_TAG, "Approve");
+        Log.i(LOG_TAG, "Student named " + name + "approve.");
     }
 
-    public void reprobate() {
-        Log.i(LOG_TAG, "Reprobate");
+    public void reprove() {
+        Log.i(LOG_TAG, "Student named " + name + "reprove.");
     }
 
-    public void course(Course course){
-        Log.i(LOG_TAG, "Pertain " + course + "Course");
+    public void belongsToCourse(Course courseId){
+        Log.i(LOG_TAG, "Student named " + name + "belongs to " + courseId + " Course");
     }
 }

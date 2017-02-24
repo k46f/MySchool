@@ -7,6 +7,10 @@ package com.example.k46f.myschool.core;
 public class Person {
 
     String name;
+    String lastName;
+    String gender;
+    String Ethnicity;
+    Integer id;
 
 }
 
